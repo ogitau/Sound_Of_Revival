@@ -16,6 +16,8 @@
         <link rel="stylesheet" href="assets/css/styles.css">
 
         <title>Sound Of Revival</title>
+        
+        
     </head>
     <body>
         <header class="header" id="header">
@@ -31,7 +33,10 @@
                             <a href="#about" class="nav__link">About</a>
                         </li>
                         <li class="nav__item">
-                            <a href="#events" class="nav__link">Events</a>
+                            <a href="#programs" class="nav__link">Programs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#gallery" class="nav__link">Our Events</a>
                         </li>
                         <li class="nav__item">
                             <a href="#contact" class="nav__link">Contact Us</a>
@@ -56,7 +61,23 @@
         <main class="main">
             <!--==================== HOME ====================-->
             <section class="home" id="home">
-                <img src="assets/img/home1.jpeg" alt="" class="home__img">
+                <div class="home__slider swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="assets/img/home4.JPG" alt="Home background image" class="home__img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/001101.jpg" alt="Home background image" class="home__img">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="assets/img/home6.JPG" alt="Home background image" class="home__img">
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
 
                 <div class="home__container container grid">
                     <div class="home__data">
@@ -66,14 +87,17 @@
                     </div>
 
                     <div class="home__social">
-                        <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                        <a href="https://www.facebook.com/profile.php?id=61550724982041" target="_blank" class="home__social-link">
                             <i class="ri-facebook-box-fill"></i>
                         </a>
-                        <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                        <a href="https://www.instagram.com/sound.of.revival788/" target="_blank" class="home__social-link">
                             <i class="ri-instagram-fill"></i>
                         </a>
-                        <a href="https://twitter.com/" target="_blank" class="home__social-link">
-                            <i class="ri-twitter-fill"></i>
+                        <a href="https://www.tiktok.com/@sound.of.revival788?lang=en" target="_blank" class="home__social-link">
+                            <i class="ri-tiktok-fill"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@SoundOfRevival-tm8pe" target="_blank" class="home__social-link">
+                            <i class="ri-youtube-fill"></i>
                         </a>
                     </div>
                     </div>
@@ -83,78 +107,244 @@
             <!--==================== ABOUT ====================-->
             <section class="about section" id="about">
                 <div class="about__container container grid">
-                    <div class="left_section"
-                    <div class="about__data">
-                        <h2 class="section__title about__title"><br> About Sound Of Revival</h2>
-                        <p class="about__description">We are a religious based organisation on<br> a mission to <br> Reach and Raise Chosen Royals for Godly Purpose and <br>
-                            a vision to <br> Revive and Restore the Place of True Worshippers
-                        </p>
-                        <h2 class="section__title about__title"><br> About Chosen Royals</h2>
-                        <p class="about__description">This is a community of true worshippers consisting of children, teenagers and associates<br> who are purposeful in their Holistic growth <br> <br>We are heavily invested on <br>1. Raising a generation of true worshippers<br> 2. Discovering and nurturing God given talents and abilities for Godly purposes<br> 3. Mentoring the young through diffrent phases of life<br>4. Mentoring parents on raising Godly kids.<br> 5. Training Sunday School teachers on raising Chosen Royals
-                        </p>
+                    <div class="about__content">
+                        <div class="about__data">
+                            <h2 class="section__title about__title">About Sound Of Revival</h2>
+                            <p class="about__description">
+                                We are a religious based organisation on a mission to 
+                                <span class="about__mission">Reach and Raise Chosen Royals for Godly Purpose</span> 
+                                and a vision to 
+                                <span class="about__vision">Revive and Restore the Place of True Worshippers</span>
+                            </p>
+                            <p class="about__text">
+                                Sound of Revival is dedicated to creating an environment where individuals can discover their true spiritual identity and purpose. Through worship, fellowship, and spiritual guidance, we aim to build a community of believers who understand their royal calling in Christ.
+                            </p>
+                            <p class="about__text">
+                                Our programs and events are designed to inspire, equip, and empower individuals to walk in their divine purpose. We believe in the power of authentic worship and the transformation it brings to lives.
+                            </p>
+                        </div>
                     </div>
-                <div class="video__container container">
-                    <div class="right_section"
-                    <p class="video__description">Find out more about us from our President and Founder of The Sound Of Revival
-                    </p>
-                    <br>
-                    <div class="video__content">
-                        <video id="video-file">
-                            <source src="assets/video/video.mp4" type="video/mp4">
-                        </video>
+                    
+                    <div class="about__video">
+                        <div class="video__content">
+                            <p class="video__description">
+                                Find out more about us from our President and Founder of The Sound Of Revival
+                            </p>
+                            
+                            <div class="video__wrapper">
+                                <video id="video-file">
+                                    <source src="assets/video/video.mp4" type="video/mp4">
+                                    Your browser does not support the video tag.
+                                </video>
 
-                        <button class="button button--flex video__button" id="video-button">
-                            <i class="ri-play-line video__button-icon" id="video-icon"></i>
-                        </button>
+                                <button class="button button--flex video__button" id="video-button" aria-label="Play video">
+                                    <i class="ri-play-line video__button-icon" id="video-icon"></i>
+                                </button>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div> 
-                </div>           
             </section>
             <!---===================== EVENTS ===================--->
-            <section class="events section" id="events">
-                <div class="events__container container">
-                    <span class="section__subtitle events__initials">Events</span>
-                        <h1 class="section__title events__title">Upcoming Events</h1>
-                        <p>these are our upcoming events for this year </p>
-                        <div class="card">
-                            <img src="./assets/img/events1.jpg" alt="" />
-                            <br>
-                            <div class="event__info">
-                                <strong>Sound Of Revival Worship Night</strong>
-                                    <p></p>
-                                    <hr/>
-                                <a href="https://docs.google.com/forms/d/e/1FAIpQLSe65q7uTgadxh6GChk2jvVmVyIn0nEQxV7EwgLyYzhb_rSJxg/viewform" target="_blank" rel="noopener noreferrer">Register Now!</a>
+            <section class="programs section" id="programs">
+                <div class="programs__container container">
+                    <span class="section__subtitle programs__initials">Programs</span>
+                    <h1 class="section__title programs__title">Our Programs</h1>
+                    
+                        <div class="programs__slider swiper">
+                        <div class="swiper-wrapper">
+                            <!-- The Chosen -->
+                            <div class="swiper-slide programs__slide">
+                                <img src="./assets/img/home5.png" alt="The Chosen Program" class="programs__img">
+                                <div class="programs__content">
+                                    <h1 class="programs__title">The Chosen</h1>
+                                    <p class="programs__description">
+                                        A transformative program designed to help you discover your divine calling and purpose. 
+                                        Through mentorship, prayer, and spiritual guidance, we help you understand your unique 
+                                        identity in Christ.
+                                    </p>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLScK4FfY0EBk5gCvSdZwti_5hcGlNfiXuq9H1C_Yoikq_DZW5g/viewform?usp=header" 
+                                        class="button programs__button" target="_blank">
+                                        Join The Chosen
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- The Royals -->
+                            <div class="swiper-slide programs__slide">
+                                <img src="./assets/img/prog1.JPG" alt="The Royals Program" class="programs__img">
+                                <div class="programs__content">
+                                    <h1 class="programs__title">The Royals</h1>
+                                    <p class="programs__description">
+                                        Step into your royal priesthood through our intensive worship and leadership program. 
+                                        Learn to walk in authority and understand your royal heritage in God's kingdom.
+                                    </p>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeP74QU7kgYkuWzsQ7m7XbJt-0-b_ZxyXr8Z4-qJQ-pZJnGAg/viewform?usp=header" 
+                                            class="button programs__button" target="_blank">
+                                        Join The Royals
+                                    </a>
+                                </div>
+                            </div>
+
+                            <!-- The Chosen Royals -->
+                            <div class="swiper-slide programs__slide">
+                                <img src="./assets/img/prog3.jpg" alt="The Chosen Royals Program" class="programs__img">
+                                <div class="programs__content">
+                                    <h1 class="programs__title">The Chosen Royals</h1>
+                                    <p class="programs__description">
+                                        Our flagship program combining both The Chosen and The Royals experiences. 
+                                        Embrace your full identity as both chosen and royal, and learn to walk in 
+                                        your complete spiritual authority.
+                                    </p>
+                                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSeP74QU7kgYkuWzsQ7m7XbJt-0-b_ZxyXr8Z4-qJQ-pZJnGAg/viewform?usp=header" 
+                                        class="button programs__button" target="_blank">
+                                        Join The Chosen Royals
+                                    </a>
                                                             </div>
                         </div>
                                  </div>
-                          </section>
+                                 </div>
 
-                    </section>
+                        <!-- Add Navigation -->
+                        <div class="swiper-button-next"> </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
             </section>
             
+            <!--==================== EVENTS GALLERY ====================-->
+            <section class="gallery section" id="gallery">
+                <div class="gallery__container container">
+                    <span class="section__subtitle gallery__initials">Gallery</span>
+                    <h1 class="section__title gallery__title">Our Events</h1>
+                    
+                    <div class="gallery__grid">
+                        <!-- Event 1 -->
+                        <div class="gallery__item">
+                            <div class="gallery__slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/events4/000001.jpeg" alt="Worship Night" class="gallery__img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/events4/02.JPG" alt="Worship Night" class="gallery__img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/events4/001011.jpg" alt="Worship Night" class="gallery__img">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <a href="https://photos.app.goo.gl/rrQb3FK3oWatRGoj7" target="_blank" class="gallery__overlay">
+                                <h3>The Generation That Seeks God--Nakuru</h3>
+                                <p>View Album</p>
+                            </a>
+                        </div>
 
+                        <!-- Event 2 -->
+                        <div class="gallery__item">
+                            <div class="gallery__slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/events3/0001.jpeg" alt="Youth Conference" class="gallery__img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/events3/0011.jpg" alt="Youth Conference" class="gallery__img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/events3/0010.jpg" alt="Youth Conference" class="gallery__img">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <a href="https://photos.app.goo.gl/wtv3caa255aK3ofo7" target="_blank" class="gallery__overlay">
+                                <h3>Undefined Worship 2024</h3>
+                                <p>View Album</p>
+                            </a>
+                        </div>
 
+                        <!-- Event 3 -->
+                        <div class="gallery__item">
+                            <div class="gallery__slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/events2/001.PNG" alt="Leadership Summit" class="gallery__img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/events2/01.jpg" alt="Leadership Summit" class="gallery__img">
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <img src="assets/img/events2/03.jpg" alt="Leadership Summit" class="gallery__img">
+                                    </div>
+                                </div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                            <a href="https://photos.app.goo.gl/BvmDvsMM5mqyxCV28" target="_blank" class="gallery__overlay">
+                                <h3>Free Indeed 2024</h3>
+                                <p>View Album</p>
+                            </a>
+                        </div>
+                    </div>
 
+                    <div class="gallery__impact">
+                        <h2>Impact Of The Events</h2>
+                        <p>Our events have been transformative experiences for countless young people, creating lasting impact in their spiritual journeys. Through these gatherings, we've witnessed remarkable transformations - from shy individuals finding their confidence in worship, to uncertain youth discovering their divine purpose. These events serve as catalysts for spiritual growth, leadership development, and community building, empowering the next generation to stand firm in their faith and purpose.</p>
+                        <p>The testimonies from our events speak of renewed faith, discovered talents, and strengthened relationships with God. We've seen young people step into their calling, develop strong prayer lives, and become influential leaders in their communities. Our events continue to be powerful platforms where the youth encounter God's presence and discover their true identity as Chosen Royals.</p>
+                    </div>
+                </div>
+            </section>
 
+            <!--==================== CONTACT ME ====================-->
+            <section class="contact section" id="contact">
+                <div class="contact__container container">
+                    <h2 class="section__title">CONTACT US</h2>
+                    <p class="contact__description">A list of ways to contact us</p>
 
+                    <div class="contact__content">
+                        <!-- Social Profiles -->
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="ri-share-line"></i>
+                            </div>
+                            <h3 class="contact__card-title">Social Profiles</h3>
+                            <div class="contact__social-links">
+                                
+                                <a href="https://www.facebook.com/profile.php?id=61550724982041" target="_blank" class="contact__social-link">
+                                    <i class="ri-facebook-line"></i>
+                                </a>
+                                <a href="https://www.instagram.com/sound.of.revival788/" target="_blank" class="contact__social-link">
+                                    <i class="ri-instagram-line"></i>
+                                </a>
+                                <a href="https://www.tiktok.com/@sound.of.revival7?lang=en" target="_blank" class="contact__social-link">
+                                    <i class="ri-tiktok-line"></i>
+                                </a>
+                                <a href="https://www.youtube.com/@SoundOfRevival-tm8pe" target="_blank" class="contact__social-link">
+                                    <i class="ri-youtube-line"></i>
+                                </a>
+                            </div>
+                        </div>
 
+                        <!-- Email Me -->
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="ri-mail-line"></i>
+                            </div>
+                            <h3 class="contact__card-title">Email Us</h3>
+                            <p class="contact__card-data">soundofrevival788@gmail.com</p>
+                        </div>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-            
+                        <!-- Call Me -->
+                        <div class="contact__card">
+                            <div class="contact__card-icon">
+                                <i class="ri-phone-line"></i>
+                            </div>
+                            <h3 class="contact__card-title">Call Us</h3>
+                            <p class="contact__card-data">+254713057490</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
 
         <!--==================== FOOTER ====================-->
@@ -162,21 +352,21 @@
             <div class="footer__container container grid">
                 <div class="footer__content grid">
                     <div class="footer__data">
-                        <h3 class="footer__title">Travel</h3>
-                        <p class="footer__description">Travel you choose the <br> destination, 
-                            we offer you the <br> experience.
+                        <h3 class="footer__title">Sound Of Revival</h3>
+                        <p class="footer__description">Join us in our mission to <br>
+                            Reach and Raise Chosen Royals <br> for Godly Purpose.
                         </p>
                         <div>
-                            <a href="https://www.facebook.com/" target="_blank" class="footer__social">
+                            <a href="https://www.facebook.com/profile.php?id=61550724982041" target="_blank" class="footer__social">
                                 <i class="ri-facebook-box-fill"></i>
                             </a>
-                            <a href="https://twitter.com/" target="_blank" class="footer__social">
-                                <i class="ri-twitter-fill"></i>
+                            <a href="https://www.tiktok.com/@sound.of.revival788?lang=en" target="_blank" class="footer__social">
+                                <i class="ri-tiktok-fill"></i>
                             </a>
-                            <a href="https://www.instagram.com/" target="_blank" class="footer__social">
+                            <a href="https://www.instagram.com/sound.of.revival788/" target="_blank" class="footer__social">
                                 <i class="ri-instagram-fill"></i>
                             </a>
-                            <a href="https://www.youtube.com/" target="_blank" class="footer__social">
+                            <a href="https://www.youtube.com/@SoundOfRevival-tm8pe" target="_blank" class="footer__social">
                                 <i class="ri-youtube-fill"></i>
                             </a>
                         </div>
@@ -187,52 +377,30 @@
                         <ul>
                             <li class="footer__item">
                                 <a href="" class="footer__link">About Us</a>
+                            </li>                        
                             </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Features</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">New & Blog</a>
-                            </li>
-                        </ul>
-                    </div>
-    
-                    <div class="footer__data">
-                        <h3 class="footer__subtitle">Company</h3>
-                        <ul>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Team</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Plan y Pricing</a>
-                            </li>
-                            <li class="footer__item">
+                              <li class="footer__item">
                                 <a href="" class="footer__link">Become a member</a>
                             </li>
+                            
                         </ul>
                     </div>
     
+                      
                     <div class="footer__data">
                         <h3 class="footer__subtitle">Support</h3>
                         <ul>
                             <li class="footer__item">
-                                <a href="" class="footer__link">FAQs</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Support Center</a>
-                            </li>
-                            <li class="footer__item">
-                                <a href="" class="footer__link">Contact Us</a>
+                                <a href="" class="footer__link">Support Us</a>
                             </li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="footer__rights">
-                    <p class="footer__copy">&#169; 2021 Bedimcode. All rigths reserved.</p>
+                    <p class="footer__copy">&#169; 2025 Sound Of Revival. All rights reserved.</p>
                     <div class="footer__terms">
                         <a href="#" class="footer__terms-link">Terms & Agreements</a>
-                        <a href="#" class="footer__terms-link">Privacy Policy</a>
                     </div>
                 </div>
             </div>

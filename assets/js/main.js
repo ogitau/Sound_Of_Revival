@@ -172,3 +172,53 @@ themeButton.addEventListener('click', () => {
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
 })
+
+// Initialize home slider
+const homeSlider = new Swiper('.home__slider', {
+    loop: true,
+    effect: 'fade', // Optional: adds a fade transition between slides
+    autoplay: {
+        delay: 5000, // Change slides every 5 seconds
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+    
+});
+
+// Initialize events slider
+const programsSlider = new Swiper('.programs__slider', {
+    loop: true,
+    effect: 'fade',
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+    },
+   
+});
+
+// Initialize gallery sliders with different delays
+const gallerySliders = document.querySelectorAll('.gallery__slider');
+gallerySliders.forEach((slider, index) => {
+    new Swiper(slider, {
+        loop: true,
+        autoplay: {
+            delay: 3000 + (index * 1000), // Different delay for each slider: 3000, 4000, 5000 ms
+            disableOnInteraction: false,
+        },
+        effect: 'fade', // Add fade effect for smoother transitions
+        fadeEffect: {
+            crossFade: true
+        },
+        pagination: {
+            el: slider.querySelector('.swiper-pagination'),
+            clickable: true,
+        },
+    });
+});
